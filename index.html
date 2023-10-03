@@ -110,13 +110,10 @@
     (function () {
         var feedType = "json";
         var feedPath = "feed.php";
-        var bgArr = [{
-            "url": "static/img/background-1.jpg",
-            "thumb": "static/img/background-1-thumb.jpg"
-        }, {
-            "url": "static/img/background-2.jpg",
-            "thumb": "static/img/background-2-thumb.jpg"
-        }];
+        var bgArr = [];
+        for (let i=0;i<25;i++){ 
+            bgArr[i] = {"url": "static/img/background-" + i + ".png"};
+        }
         var senArr = [
             {
                 ch: ["This is an example."],
