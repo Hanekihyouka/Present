@@ -106,6 +106,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" media="none" onload="this.media='all'">
 <script src="https://fastly.jsdelivr.net/gh/ClassicOldSong/typinyin.js@master/typinyin.min.js"></script>
 <script src="static/js/main.js"></script>
+<script src="static/js/tips.js"></script>
 <script>
     (function () {
         var feedType = "json";
@@ -114,16 +115,6 @@
         for (let i=0;i<25;i++){ 
             bgArr[i] = {"url": "static/img/background-" + i + ".png"};
         }
-        var senArr = [
-            {
-                ch: ["This is an example."],
-                py: ["This is an example."],
-            }, {
-                ch: ["这是", "一个", "示例", "."],
-                py: ["zhe'shi", "yi'ge", "shi'li", "."],
-            }
-        ];
-
         Init(feedType, feedPath, bgArr, senArr);
     })();
 </script>
